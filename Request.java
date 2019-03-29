@@ -28,7 +28,6 @@ public class Request {
     }
 
     /**
-     *
      * requestString形式如下：
      * GET /index.html HTTP/1.1
      * Host: localhost:8080
@@ -39,14 +38,16 @@ public class Request {
      *
      *
      *
+     *
+     *
      */
     private String parseUri(String requestString) {
-        int index1, index2;
-        index1 = requestString.indexOf(' ');
-        if (index1 != -1) {
-            index2 = requestString.indexOf(' ', index1 + 1);
-            if (index2 > index1)
-                return requestString.substring(index1 + 1, index2);
+        int first, second;
+        first = requestString.indexOf(' ');
+        if (first != -1) {
+            second = requestString.indexOf(' ', first + 1);
+            if (second > first)
+                return requestString.substring(first + 1, second);
         }
         return null;
     }

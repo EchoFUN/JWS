@@ -8,9 +8,8 @@ import java.net.Socket;
 
 class Service {
 
-    public static final String WEB_ROOT = System.getProperty("user.dir") + File.separator + "webroot";
-
-    private static final String SHUTDOWN_COMMAND = "/SHUTDOWN";
+    public static int REQUEST_PORT = 8080;
+    public static String WEB_ROOT = System.getProperty("user.dir") + File.separator + "webroot";
 
     public static void main(String[] args) {
         (new Service()).await();
@@ -18,11 +17,10 @@ class Service {
 
     public void await() {
         ServerSocket serverSocket = null;
-        int port = 8080;
         try {
-            serverSocket = new ServerSocket(port, 1, InetAddress.getByName("127.0.0.1"));
-        } catch (IOException e) {
-            e.printStackTrace();
+            serverSocket = new ServerSocket(REQUEST_PORT, 1, InetAddress.getByName("127.0.0.1"));
+        } catch (IOException except) {
+            Logger.error(except);
             System.exit(1);
         }
 
@@ -35,20 +33,18 @@ class Service {
                 input = socket.getInputStream();
                 output = socket.getOutputStream();
 
+                // Handle the request actions .
                 Request request = new Request(input);
                 request.parse();
-                if (request.getUri().equals(SHUTDOWN_COMMAND)) {
-                    break;
-                }
 
+                // Handle the response actions .
                 Response response = new Response(output);
                 response.setRequest(request);
                 response.sendStaticResource();
 
                 socket.close();
-
-            } catch (Exception e) {
-                e.printStackTrace();
+            } catch (Exception except) {
+                Logger.error(except);
                 continue;
             }
         }
