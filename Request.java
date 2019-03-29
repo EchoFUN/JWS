@@ -28,6 +28,7 @@ public class Request {
     }
 
     /**
+     *
      * requestString形式如下：
      * GET /index.html HTTP/1.1
      * Host: localhost:8080
