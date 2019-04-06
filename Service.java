@@ -26,10 +26,17 @@ class Service {
 
         while (true) {
             Socket socket;
-            InputStream input;
-            OutputStream output;
             try {
                 socket = serverSocket.accept();
+                new Thread(new RequestThread(socket)).start();
+
+
+
+
+
+                /*
+                InputStream input;
+                OutputStream output;
                 input = socket.getInputStream();
                 output = socket.getOutputStream();
 
@@ -43,6 +50,7 @@ class Service {
                 response.sendStaticResource();
 
                 socket.close();
+                 */
             } catch (Exception except) {
                 Logger.error(except);
                 continue;

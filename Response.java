@@ -1,15 +1,7 @@
-import java.io.OutputStream;
-import java.io.IOException;
-import java.io.FileInputStream;
 import java.io.File;
-
-/*
-  HTTP Response = Status-Line
-    *(( general-header | response-header | entity-header ) CRLF)
-    CRLF
-    [ message-body ]
-    Status-Line = HTTP-Version SP Status-Code SP Reason-Phrase CRLF
-*/
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.OutputStream;
 
 public class Response {
 
