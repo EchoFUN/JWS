@@ -29,28 +29,6 @@ class Service {
             try {
                 socket = serverSocket.accept();
                 new Thread(new RequestThread(socket)).start();
-
-
-
-
-
-                /*
-                InputStream input;
-                OutputStream output;
-                input = socket.getInputStream();
-                output = socket.getOutputStream();
-
-                // Handle the request actions .
-                Request request = new Request(input);
-                request.parse();
-
-                // Handle the response actions .
-                Response response = new Response(output);
-                response.setRequest(request);
-                response.sendStaticResource();
-
-                socket.close();
-                 */
             } catch (Exception except) {
                 Logger.error(except);
                 continue;
