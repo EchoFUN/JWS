@@ -1,11 +1,7 @@
 package request;
 
-import java.io.InputStream;
 import java.io.IOException;
-
-import handlers.Controller;
-import handlers.HelloworldController;
-import handlers.NotFoundController;
+import java.io.InputStream;
 
 public class Request {
 
@@ -15,6 +11,7 @@ public class Request {
 
     public Request(InputStream input) {
         this.input = input;
+        parse();
     }
 
     public void parse() {
@@ -32,19 +29,6 @@ public class Request {
         }
         System.out.print(request.toString());
         uri = parseUri(request.toString());
-    }
-
-    public Controller fetchControllerByUrl() {
-
-
-
-
-        if (uri.equals(RequestUrl.URL_HELLO_WORLD)) {
-            return new HelloworldController();
-        }
-
-
-        return new NotFoundController();
     }
 
     /**

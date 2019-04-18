@@ -18,20 +18,17 @@ public class RequestThread implements Runnable {
         this.socket = socket;
     }
 
+    // TODO Add the thread pool to this .
+
     @Override
     public void run() {
         try {
             input = socket.getInputStream();
             output = socket.getOutputStream();
 
-            // Handle the request actions .
             Request request = new Request(input);
-            request.parse();
-
-            // Handle the response actions .
             Response response = new Response(output);
             response.setRequest(request);
-
 
             response.sendDataByController();
 

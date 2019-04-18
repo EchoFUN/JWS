@@ -5,6 +5,7 @@ import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
 
+import configrations.RequestConf;
 import request.RequestThread;
 import utils.Logger;
 
@@ -19,7 +20,7 @@ class Service {
     }
 
     public static void intiService() {
-
+        RequestConf.inst().init();
     }
 
     public void await() {

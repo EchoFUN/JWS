@@ -3,6 +3,7 @@ package response;
 import java.io.IOException;
 import java.io.OutputStream;
 
+import configrations.RequestConf;
 import handlers.Controller;
 import request.Request;
 import utils.Logger;
@@ -51,7 +52,7 @@ public class Response {
     */
 
     public void sendDataByController() {
-        Controller handler = request.fetchControllerByUrl();
+        Controller handler = RequestConf.inst().fetchControllerByUrl(request.getUri());
         handler.process(request, this);
     }
 
