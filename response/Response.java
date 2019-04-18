@@ -1,5 +1,7 @@
 package response;
 
+import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 
@@ -7,6 +9,9 @@ import configrations.RequestConf;
 import handlers.Controller;
 import request.Request;
 import utils.Logger;
+import utils.Utils;
+
+import static configrations.System.WEB_ROOT;
 
 public class Response {
 
@@ -22,14 +27,32 @@ public class Response {
         this.request = request;
     }
 
-    /*
-    public void sendStaticResource() throws IOException {
+    public void sendDataByController() {
+        String uri = request.getUri();
+
+        if (Utils.isStaticRequest(uri)) {
+            handleStaticRequest(uri);
+        } else {
+            Controller handler = RequestConf.inst().fetchControllerByUrl(uri);
+            handler.process(request, this);
+        }
+    }
+
+    public String fetchHeader(String content) {
+        return "HTTP/1.1 200 OK\n" +
+                "Content-Type: text/plain; charset=utf-8\n" +
+                "Content-Length: " + content.length() + "\n" +
+                "Date: Thu, 18 Apr 2019 08:27:58 GMT\n" +
+                "Connection: keep-alive\n" +
+                "\n" + content;
+    }
+
+    public void handleStaticRequest(String uri) {
         byte[] bytes = new byte[BUFFER_SIZE];
         FileInputStream fis = null;
 
-
         try {
-            File file = new File(WEB_ROOT, request.getUri());
+            File file = new File(WEB_ROOT, uri);
             if (file.exists()) {
                 fis = new FileInputStream(file);
                 int ch = fis.read(bytes, 0, BUFFER_SIZE);
@@ -45,24 +68,13 @@ public class Response {
             Logger.error(except);
         } finally {
             if (fis != null) {
-                fis.close();
+                try {
+                    fis.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
         }
-    }
-    */
-
-    public void sendDataByController() {
-        Controller handler = RequestConf.inst().fetchControllerByUrl(request.getUri());
-        handler.process(request, this);
-    }
-
-    public String fetchHeader(String content) {
-        return "HTTP/1.1 200 OK\n" +
-                "Content-Type: text/plain; charset=utf-8\n" +
-                "Content-Length: " + content.length() + "\n" +
-                "Date: Thu, 18 Apr 2019 08:27:58 GMT\n" +
-                "Connection: keep-alive\n" +
-                "\n" + content;
     }
 
     public void write(String data) {
