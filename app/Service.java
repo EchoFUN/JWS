@@ -8,9 +8,9 @@ import java.net.Socket;
 import request.RequestThread;
 import utils.Logger;
 
-class Service {
+import static configrations.System.WEB_PORT;
 
-    public static int REQUEST_PORT = 8080;
+class Service {
 
     public static void main(String[] args) {
         (new Service()).await();
@@ -19,7 +19,7 @@ class Service {
     public void await() {
         ServerSocket serverSocket = null;
         try {
-            serverSocket = new ServerSocket(REQUEST_PORT, 1, InetAddress.getByName("127.0.0.1"));
+            serverSocket = new ServerSocket(WEB_PORT, 1, InetAddress.getByName("127.0.0.1"));
         } catch (IOException except) {
             Logger.error(except);
             System.exit(1);

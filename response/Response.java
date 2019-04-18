@@ -1,10 +1,12 @@
 package response;
 
 import java.io.File;
+import java.io.IOException;
 import java.io.OutputStream;
 
 import handlers.Controller;
 import request.Request;
+import utils.Logger;
 
 public class Response {
 
@@ -55,7 +57,15 @@ public class Response {
 
 
         Controller handler = request.fetchControllerByUrl();
-        handler.process(request);
+        handler.process(request, this);
 
+    }
+
+    public void write(String data) {
+        try {
+            output.write(data.getBytes());
+        } catch (IOException e) {
+            Logger.error(e);
+        }
     }
 }

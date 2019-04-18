@@ -4,6 +4,8 @@ import java.io.InputStream;
 import java.io.IOException;
 
 import handlers.Controller;
+import handlers.HelloworldController;
+import handlers.NotFoundController;
 
 public class Request {
 
@@ -30,16 +32,18 @@ public class Request {
         }
         System.out.print(request.toString());
         uri = parseUri(request.toString());
+    }
+
+    public Controller fetchControllerByUrl() {
 
 
 
         if (uri.equals(RequestUrl.URL_HELLO_WORLD)) {
-
+            return new HelloworldController();
         }
-    }
 
-    public Controller fetchControllerByUrl() {
-        return null;
+
+        return new NotFoundController();
     }
 
     /**
@@ -65,11 +69,10 @@ public class Request {
             if (second > first)
                 return requestString.substring(first + 1, second);
         }
-        return null;
+        return "";
     }
 
     public String getUri() {
         return uri;
     }
-
 }
