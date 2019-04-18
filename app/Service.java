@@ -1,15 +1,16 @@
-import java.io.File;
+package app;
+
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
 import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
 
+import request.RequestThread;
+import utils.Logger;
+
 class Service {
 
     public static int REQUEST_PORT = 8080;
-    public static String WEB_ROOT = System.getProperty("user.dir") + File.separator + "webroot";
 
     public static void main(String[] args) {
         (new Service()).await();

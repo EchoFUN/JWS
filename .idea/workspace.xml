@@ -1,52 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b972819c-fb33-400b-a57b-8b1bff5946bd" name="Default Changelist" comment="">
+    <list default="true" id="6e6037b9-cb34-492f-a5c1-81dc8808edf3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configrations/System.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/handlers/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/handlers/HelloworldController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/request/RequestUrl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/xukai.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/xukai.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RequestThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/RequestThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/Service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JWS/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JWS/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JWS/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JWS/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JWS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JWS.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/utils/Logger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/request/Request.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RequestThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/request/RequestThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/response/Response.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JWS/.idea/dictionaries/xukai.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JWS/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JWS/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JWS/META-INF/JWS.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JWS/libs/mysql/CHANGES" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JWS/libs/mysql/INFO_BIN" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JWS/libs/mysql/INFO_SRC" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JWS/libs/mysql/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JWS/libs/mysql/README" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JWS/libs/mysql/build.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JWS/libs/mysql/src/build/misc/debian.in/changelog" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JWS/libs/mysql/src/build/misc/debian.in/compat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JWS/libs/mysql/src/build/misc/debian.in/control" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JWS/libs/mysql/src/build/misc/debian.in/copyright" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JWS/libs/mysql/src/build/misc/debian.in/install" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JWS/libs/mysql/src/build/misc/debian.in/rules" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JWS/libs/mysql/src/build/misc/debian.in/source/format" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JWS/libs/mysql/src/build/misc/debian.in/watch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JWS/libs/mysql/src/build/misc/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JWS/libs/mysql/src/build/misc/rpm.spec.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JWS/libs/mysql/src/main/doc/connector-j-overview.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JWS/libs/mysql/src/main/doc/mysqlx-overview.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JWS/libs/mysql/src/main/resources/com/mysql/cj/LocalizedErrorMessages.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JWS/libs/mysql/src/main/resources/com/mysql/cj/configurations/3-0-Compat.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JWS/libs/mysql/src/main/resources/com/mysql/cj/configurations/clusterBase.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JWS/libs/mysql/src/main/resources/com/mysql/cj/configurations/coldFusion.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JWS/libs/mysql/src/main/resources/com/mysql/cj/configurations/fullDebug.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JWS/libs/mysql/src/main/resources/com/mysql/cj/configurations/maxPerformance-8-0.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JWS/libs/mysql/src/main/resources/com/mysql/cj/configurations/maxPerformance.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JWS/libs/mysql/src/main/resources/com/mysql/cj/configurations/solarisMaxPerformance.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JWS/libs/mysql/src/main/resources/com/mysql/cj/util/TimeZoneMapping.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JWS/libs/mysql/src/test/config/ssl-test-certs/ca-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JWS/libs/mysql/src/test/config/ssl-test-certs/ca-key.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JWS/libs/mysql/src/test/config/ssl-test-certs/ca-truststore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JWS/libs/mysql/src/test/config/ssl-test-certs/certs_howto.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JWS/libs/mysql/src/test/config/ssl-test-certs/client-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JWS/libs/mysql/src/test/config/ssl-test-certs/client-key.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JWS/libs/mysql/src/test/config/ssl-test-certs/client-keystore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JWS/libs/mysql/src/test/config/ssl-test-certs/mykey.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JWS/libs/mysql/src/test/config/ssl-test-certs/mykey.pub" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JWS/libs/mysql/src/test/config/ssl-test-certs/server-cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JWS/libs/mysql/src/test/config/ssl-test-certs/server-key.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JWS/JWS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JWS/JWS.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -61,29 +32,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Service.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="20" column="32" lean-forward="true" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+        <entry file="file://$PROJECT_DIR$/configrations/System.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webroot/helloworld.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="10" lean-forward="true" selection-start-column="10" selection-end-column="10" />
+            <state relative-caret-position="48">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -103,15 +56,24 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Response.java" />
-        <option value="$PROJECT_DIR$/Service.java" />
         <option value="$PROJECT_DIR$/RequestThread.java" />
+        <option value="$PROJECT_DIR$/RequestUrl.java" />
+        <option value="$PROJECT_DIR$/Request.java" />
+        <option value="$PROJECT_DIR$/handlers/Helloworld.java" />
+        <option value="$PROJECT_DIR$/Response.java" />
+        <option value="$PROJECT_DIR$/handlers/Controller.java" />
+        <option value="$PROJECT_DIR$/request/RequestThread.java" />
+        <option value="$PROJECT_DIR$/handlers/HelloworldController.java" />
+        <option value="$PROJECT_DIR$/app/Service.java" />
+        <option value="$PROJECT_DIR$/response/Response.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="129" />
+    <option name="y" value="23" />
+    <option name="width" value="1725" />
+    <option name="height" value="1129" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -122,7 +84,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -130,10 +91,16 @@
               <item name="JWS" type="b2602c69:ProjectViewProjectNode" />
               <item name="JWS" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="JWS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JWS" type="462c0819:PsiDirectoryNode" />
+              <item name="configrations" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -161,9 +128,15 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="Service" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="Service" />
+    <configuration name="Service" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="app.Service" />
       <module name="JWS" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Service" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -174,114 +147,170 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b972819c-fb33-400b-a57b-8b1bff5946bd" name="Default Changelist" comment="" />
-      <created>1554559448390</created>
+      <changelist id="6e6037b9-cb34-492f-a5c1-81dc8808edf3" name="Default Changelist" comment="" />
+      <created>1555569976309</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1554559448390</updated>
-      <workItem from="1554559451800" duration="67000" />
-      <workItem from="1554559535189" duration="1818000" />
+      <updated>1555569976309</updated>
+      <workItem from="1555569977927" duration="1950000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1885000" />
+    <option name="totallyTimeSpent" value="1950000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="129" y="23" width="1725" height="1129" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24105866" />
+      <window_info id="Designer" />
+      <window_info id="Image Layers" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Capture Tool" />
+      <window_info id="UI Designer" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27569816" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info id="UI Designer" order="6" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Flutter Performance" side_tool="true" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32891566" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3741562" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.30568948" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="Flutter Performance" order="12" side_tool="true" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Flutter Inspector" />
+      <window_info anchor="right" id="Flutter Outline" />
+      <window_info anchor="right" id="SciView" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Capture Analysis" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Flutter Inspector" order="5" />
-      <window_info anchor="right" id="Flutter Outline" order="6" />
-      <window_info anchor="right" id="Database" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Theme Preview" order="9" />
-      <window_info anchor="right" id="Capture Analysis" order="10" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/request/RequestThread.java</url>
+          <line>20</line>
+          <properties />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/request/Request.java</url>
+          <line>28</line>
+          <properties />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/jdk/Contents/Home/jre/lib/rt.jar!/java/net/ServerSocket.class">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="43" column="27" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
+        <state relative-caret-position="300">
+          <caret line="25" column="8" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webroot/helloworld.txt">
+    <entry file="file://$PROJECT_DIR$/request/RequestUrl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="10" lean-forward="true" selection-start-column="10" selection-end-column="10" />
+        <state relative-caret-position="156">
+          <caret line="13" column="2" lean-forward="true" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Response.java">
+    <entry file="file://$PROJECT_DIR$/utils/Logger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="36" column="33" lean-forward="true" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
+        <state relative-caret-position="72">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Request.java">
+    <entry file="file://$PROJECT_DIR$/request/Request.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RequestThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+        <state relative-caret-position="84">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#128#129#0" expanded="true" />
-            <element signature="e#164#165#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Service.java">
+    <entry file="file://$PROJECT_DIR$/request/RequestThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="20" column="32" lean-forward="true" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+        <state relative-caret-position="276">
+          <caret line="31" column="19" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/handlers/HelloworldController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+        <state relative-caret-position="96">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/handlers/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/response/Response.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="25" column="28" lean-forward="true" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Service.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="24" column="18" lean-forward="true" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configrations/System.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8 (2)</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

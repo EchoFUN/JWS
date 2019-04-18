@@ -1,7 +1,12 @@
+package request;
+
 import java.io.InputStream;
 import java.io.IOException;
 
+import handlers.Controller;
+
 public class Request {
+
 
     private InputStream input;
     private String uri;
@@ -25,6 +30,16 @@ public class Request {
         }
         System.out.print(request.toString());
         uri = parseUri(request.toString());
+
+
+
+        if (uri.equals(RequestUrl.URL_HELLO_WORLD)) {
+
+        }
+    }
+
+    public Controller fetchControllerByUrl() {
+        return null;
     }
 
     /**

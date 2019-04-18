@@ -1,9 +1,14 @@
+package response;
+
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
 import java.io.OutputStream;
 
+import handlers.Controller;
+import request.Request;
+
 public class Response {
+
+    public static String WEB_ROOT = System.getProperty("user.dir") + File.separator + "webroot";
 
     private static final int BUFFER_SIZE = 1024;
     Request request;
@@ -17,11 +22,14 @@ public class Response {
         this.request = request;
     }
 
+    /*
     public void sendStaticResource() throws IOException {
         byte[] bytes = new byte[BUFFER_SIZE];
         FileInputStream fis = null;
+
+
         try {
-            File file = new File(Service.WEB_ROOT, request.getUri());
+            File file = new File(WEB_ROOT, request.getUri());
             if (file.exists()) {
                 fis = new FileInputStream(file);
                 int ch = fis.read(bytes, 0, BUFFER_SIZE);
@@ -40,5 +48,14 @@ public class Response {
                 fis.close();
             }
         }
+    }
+    */
+
+    public void sendDataByController() {
+
+
+        Controller handler = request.fetchControllerByUrl();
+        handler.process(request);
+
     }
 }

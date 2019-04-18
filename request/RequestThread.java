@@ -1,7 +1,12 @@
+package request;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.Socket;
+
+import request.Request;
+import response.Response;
 
 public class RequestThread implements Runnable {
 
@@ -9,7 +14,7 @@ public class RequestThread implements Runnable {
     InputStream input;
     OutputStream output;
 
-    RequestThread(Socket socket) {
+    public RequestThread(Socket socket) {
         this.socket = socket;
     }
 
@@ -26,7 +31,11 @@ public class RequestThread implements Runnable {
             // Handle the response actions .
             Response response = new Response(output);
             response.setRequest(request);
-            response.sendStaticResource();
+
+
+            response.sendDataByController();
+
+            // response.sendStaticResource();
 
             socket.close();
 

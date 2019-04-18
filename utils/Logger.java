@@ -1,3 +1,5 @@
+package utils;
+
 public class Logger {
 
     public static void error(Exception e) {
