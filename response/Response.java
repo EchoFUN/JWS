@@ -1,6 +1,5 @@
 package response;
 
-import java.io.File;
 import java.io.IOException;
 import java.io.OutputStream;
 
@@ -9,8 +8,6 @@ import request.Request;
 import utils.Logger;
 
 public class Response {
-
-    public static String WEB_ROOT = System.getProperty("user.dir") + File.separator + "webroot";
 
     private static final int BUFFER_SIZE = 1024;
     Request request;
@@ -54,16 +51,22 @@ public class Response {
     */
 
     public void sendDataByController() {
-
-
         Controller handler = request.fetchControllerByUrl();
         handler.process(request, this);
+    }
 
+    public String fetchHeader(String content) {
+        return "HTTP/1.1 200 OK\n" +
+                "Content-Type: text/plain; charset=utf-8\n" +
+                "Content-Length: " + content.length() + "\n" +
+                "Date: Thu, 18 Apr 2019 08:27:58 GMT\n" +
+                "Connection: keep-alive\n" +
+                "\n" + content;
     }
 
     public void write(String data) {
         try {
-            output.write(data.getBytes());
+            output.write(fetchHeader(data).getBytes());
         } catch (IOException e) {
             Logger.error(e);
         }

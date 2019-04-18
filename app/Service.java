@@ -13,7 +13,13 @@ import static configrations.System.WEB_PORT;
 class Service {
 
     public static void main(String[] args) {
+
+        intiService();
         (new Service()).await();
+    }
+
+    public static void intiService() {
+
     }
 
     public void await() {
