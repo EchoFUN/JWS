@@ -3,6 +3,8 @@ package request;
 import java.io.IOException;
 import java.io.InputStream;
 
+import utils.Logger;
+
 public class Request {
 
 
@@ -21,7 +23,7 @@ public class Request {
         try {
             i = input.read(buffer);
         } catch (IOException e) {
-            e.printStackTrace();
+            Logger.error(e);
             i = -1;
         }
         for (int j = 0; j < i; j++) {
