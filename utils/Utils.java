@@ -9,22 +9,30 @@ public class Utils {
      *
      *
      *
+     *
+     *
+     *
+     *
      * @param uri
      * @return
      */
     public static boolean isStaticRequest(String uri) {
+        try {
+            int uriLength = uri.length();
+            while (uriLength >= 0) {
+                Character character = uri.charAt(uriLength - 1);
+                if (character.equals(".")) {
 
-        int uriLength = uri.length();
-        while (uriLength >= 0) {
-            Character character = uri.charAt(uriLength);
-            if (character.equals(".")) {
+                }
 
+
+                uriLength--;
             }
 
-
-
-            uriLength--;
+        } catch (Exception e) {
+            return false;
         }
+
 
         return false;
     }
