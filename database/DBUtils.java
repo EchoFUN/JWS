@@ -2,18 +2,23 @@ package database;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.util.Map;
+
+import configrations.System;
+
+import static configrations.Constant.PASSWORD;
+import static configrations.Constant.URL;
+import static configrations.Constant.USERNAME;
 
 public class DBUtils {
 
-    private static final String url = "jdbc:mysql://localhost:3306/yymg?useUnicode=true&characterEncoding=UTF-8";
-    private static final String username = "root";
-    private static final String password = "123456";
 
     private static Connection conn = null;
 
     public static Connection getConnection() throws Exception {
         if (conn == null) {
-            conn = DriverManager.getConnection(url, username, password);
+            Map<String, String> databaseInfo = System.fetchDatabaseInfo();
+            conn = DriverManager.getConnection(databaseInfo.get(URL), databaseInfo.get(USERNAME), databaseInfo.get(PASSWORD));
             return conn;
         }
         return conn;
