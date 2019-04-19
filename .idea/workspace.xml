@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6e6037b9-cb34-492f-a5c1-81dc8808edf3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/database/DBUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/xukai.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/xukai.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handlers/HelloworldController.java" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/HelloworldController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JWS/.idea/dictionaries/xukai.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JWS/.idea/dictionaries/xukai.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JWS/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JWS/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/request/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/request/Request.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/Logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/utils/Logger.java" afterDir="false" />
-    </list>
+    <list default="true" id="6e6037b9-cb34-492f-a5c1-81dc8808edf3" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,32 +19,7 @@
     <favorites_list name="JWS" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/handlers/HelloworldController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/database/DBUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="8" column="48" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -122,11 +88,6 @@
             <path>
               <item name="JWS" type="b2602c69:ProjectViewProjectNode" />
               <item name="JWS" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JWS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JWS" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -198,18 +159,17 @@
       <updated>1555569976309</updated>
       <workItem from="1555569977927" duration="6376000" />
       <workItem from="1555577167090" duration="7455000" />
-      <workItem from="1555591743033" duration="5875000" />
+      <workItem from="1555591743033" duration="6259000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19706000" />
+    <option name="totallyTimeSpent" value="20090000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="198" y="23" width="1725" height="1129" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49833888" visible="true" weight="0.26500297" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49833888" visible="true" weight="0.26500297" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -218,8 +178,8 @@
       <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.40308583" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.35583413" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.40308583" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.35583413" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -484,16 +444,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/handlers/HelloworldController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/utils/Logger.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -509,8 +459,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/database/DBUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="8" column="48" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
+        <state relative-caret-position="216">
+          <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handlers/HelloworldController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="16" column="37" lean-forward="true" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
