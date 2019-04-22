@@ -7,19 +7,24 @@ import java.net.Socket;
 
 import configrations.RequestConf;
 import request.RequestThread;
+import utils.ArrayUtils;
 import utils.Logger;
 
+import static configrations.Constant.PRODUCTION_ENV_FLAG;
 import static configrations.System.WEB_PORT;
 
 class Service {
 
+
+    private boolean status = 0;
+
     public static void main(String[] args) {
+        if (ArrayUtils.contains(args, PRODUCTION_ENV_FLAG)) {
 
-
-
+        }
 
         intiService();
-        (new Service()).await();
+        new Service().await();
     }
 
     public static void intiService() {
