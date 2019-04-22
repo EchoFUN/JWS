@@ -4,14 +4,17 @@ import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 
+import static configrations.Constant.DEVELOPMENT_ENV_FLAG;
+import static configrations.Constant.PRODUCTION_ENV_FLAG;
 import static configrations.Constant.URL;
 import static configrations.Constant.PASSWORD;
 import static configrations.Constant.USERNAME;
 
-public class System {
+public class SysConf {
 
+    public static String build = DEVELOPMENT_ENV_FLAG;
 
-    public static int WEB_PORT = 8081;
+    public static int WEB_PORT = 8082;
 
     public static String WEB_ROOT = java.lang.System.getProperty("user.dir") + File.separator + "webroot";
 
@@ -21,7 +24,7 @@ public class System {
     public static Map<String, String> fetchDatabaseInfo() {
         databaseInfo.put(URL, "jdbc:mysql://127.0.0.1:3306/yymg?useUnicode=true&characterEncoding=UTF-8");
         databaseInfo.put(USERNAME, "root");
-        databaseInfo.put(PASSWORD, "");
+        databaseInfo.put(PASSWORD, (build.equals(PRODUCTION_ENV_FLAG) ? "" : "123456"));
 
         return databaseInfo;
     }

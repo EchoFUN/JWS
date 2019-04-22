@@ -6,32 +6,37 @@ import java.net.ServerSocket;
 import java.net.Socket;
 
 import configrations.RequestConf;
+import configrations.SysConf;
 import request.RequestThread;
 import utils.ArrayUtils;
 import utils.Logger;
 
 import static configrations.Constant.PRODUCTION_ENV_FLAG;
-import static configrations.System.WEB_PORT;
+import static configrations.SysConf.WEB_PORT;
 
 class Service {
 
-
-    private boolean status = 0;
-
     public static void main(String[] args) {
-        if (ArrayUtils.contains(args, PRODUCTION_ENV_FLAG)) {
-
-        }
-
+        initConfiguration(args);
         intiService();
-        new Service().await();
+        initServiceListener();
+    }
+
+    private static void initServiceListener() {
+        await();
+    }
+
+    private static void initConfiguration(String[] args) {
+        if (ArrayUtils.contains(args, PRODUCTION_ENV_FLAG)) {
+            SysConf.build = PRODUCTION_ENV_FLAG;
+        }
     }
 
     public static void intiService() {
         RequestConf.inst().init();
     }
 
-    public void await() {
+    public static void await() {
         ServerSocket serverSocket = null;
         try {
             serverSocket = new ServerSocket(WEB_PORT, 1, InetAddress.getByName("127.0.0.1"));

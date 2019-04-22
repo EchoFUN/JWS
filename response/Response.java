@@ -11,7 +11,7 @@ import request.Request;
 import utils.Logger;
 import utils.Utils;
 
-import static configrations.System.WEB_ROOT;
+import static configrations.SysConf.WEB_ROOT;
 
 public class Response {
 

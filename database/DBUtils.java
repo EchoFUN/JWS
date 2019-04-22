@@ -4,7 +4,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.util.Map;
 
-import configrations.System;
+import configrations.SysConf;
 
 import static configrations.Constant.PASSWORD;
 import static configrations.Constant.URL;
@@ -17,7 +17,7 @@ public class DBUtils {
 
     public static Connection getConnection() throws Exception {
         if (conn == null) {
-            Map<String, String> databaseInfo = System.fetchDatabaseInfo();
+            Map<String, String> databaseInfo = SysConf.fetchDatabaseInfo();
             conn = DriverManager.getConnection(databaseInfo.get(URL), databaseInfo.get(USERNAME), databaseInfo.get(PASSWORD));
             return conn;
         }
