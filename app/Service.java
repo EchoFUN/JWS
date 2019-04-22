@@ -49,6 +49,14 @@ class Service {
             System.exit(1);
         }
 
+        /**
+         *
+         * Dynamic adjust the thread pool parameters to make the system of the best performance .
+         *
+         *
+         *
+         *
+         */
         ExecutorService executor = new ThreadPoolExecutor(5, 10, 100L, TimeUnit.MILLISECONDS, new LinkedBlockingQueue<>(30), new ThreadPoolExecutor.CallerRunsPolicy());
         while (true) {
             Socket socket;
