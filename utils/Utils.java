@@ -5,14 +5,6 @@ public class Utils {
     /**
      * Determine if the request is static or not .
      *
-     *
-     *
-     *
-     *
-     *
-     *
-     *
-     *
      * @param uri
      * @return
      */
@@ -24,16 +16,12 @@ public class Utils {
                 if (character.equals(".")) {
 
                 }
-
-
                 uriLength--;
             }
 
         } catch (Exception e) {
             return false;
         }
-
-
         return false;
     }
 }

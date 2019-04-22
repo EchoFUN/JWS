@@ -12,7 +12,6 @@ import static configrations.Constant.USERNAME;
 
 public class DBUtils {
 
-
     private static Connection conn = null;
 
     public static Connection getConnection() throws Exception {

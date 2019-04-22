@@ -18,8 +18,6 @@ public class RequestThread implements Runnable {
         this.socket = socket;
     }
 
-    // TODO Add the thread pool to this .
-
     @Override
     public void run() {
         try {
@@ -29,14 +27,9 @@ public class RequestThread implements Runnable {
             Request request = new Request(input);
             Response response = new Response(output);
             response.setRequest(request);
-
-            response.sendDataByController();
-
-            // response.sendStaticResource();
-
+            response.sendDataByController()
+            ;
             socket.close();
-
-
         } catch (IOException e) {
             e.printStackTrace();
         }

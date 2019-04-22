@@ -32,11 +32,12 @@ public class Main {
 
     public static void main(String[] args) {
         ExecutorService executor = new ThreadPoolExecutor(
-                5, // core pool size
-                10, // max pool size
-                100L, TimeUnit.MILLISECONDS, // keep alive
-                new LinkedBlockingQueue<>(30), // queue
-                new ThreadPoolExecutor.CallerRunsPolicy()); // handler
+                5,
+                10,
+                100L, TimeUnit.MILLISECONDS,
+                new LinkedBlockingQueue<>(30),
+                new ThreadPoolExecutor.CallerRunsPolicy()
+        );
 
         System.out.println("Main thread id " + Thread.currentThread().getId());
 

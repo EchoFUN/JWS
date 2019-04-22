@@ -4,6 +4,10 @@ import java.io.IOException;
 import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.LinkedBlockingQueue;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
 
 import configrations.RequestConf;
 import configrations.SysConf;
@@ -45,11 +49,12 @@ class Service {
             System.exit(1);
         }
 
+        ExecutorService executor = new ThreadPoolExecutor(5, 10, 100L, TimeUnit.MILLISECONDS, new LinkedBlockingQueue<>(30), new ThreadPoolExecutor.CallerRunsPolicy());
         while (true) {
             Socket socket;
             try {
                 socket = serverSocket.accept();
-                new Thread(new RequestThread(socket)).start();
+                executor.submit(new RequestThread(socket));
             } catch (Exception except) {
                 Logger.error(except);
                 continue;

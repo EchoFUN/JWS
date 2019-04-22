@@ -25,7 +25,6 @@ public class HelloworldController extends Controller {
             Logger.error(e);
         }
 
-
         response.write("Hello,world!");
     }
 }

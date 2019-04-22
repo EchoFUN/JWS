@@ -34,7 +34,6 @@ public class Request {
     }
 
     /**
-     *
      * requestString形式如下：
      * GET /index.html HTTP/1.1
      * Host: localhost:8080
@@ -42,6 +41,8 @@ public class Request {
      * Cache-Control: max-age=0
      * ...
      * 该函数目的就是为了获取/index.html字符串
+     *
+     *
      *
      *
      *
