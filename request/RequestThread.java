@@ -21,7 +21,8 @@ public class RequestThread implements Runnable {
     @Override
     public void run() {
         try {
-            System.out.println("thread: " + Thread.currentThread().getId() + " is working for the request .");
+            long threadId = Thread.currentThread().getId();
+            System.out.println("thread: " + threadId + " is working for the request .");
 
             input = socket.getInputStream();
             output = socket.getOutputStream();
@@ -31,6 +32,7 @@ public class RequestThread implements Runnable {
             response.setRequest(request);
             response.sendDataByController();
             socket.close();
+            System.out.println("thread: " + threadId + " is finished it's job .");
         } catch (IOException e) {
             e.printStackTrace();
         }
