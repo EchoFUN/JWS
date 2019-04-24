@@ -4,6 +4,7 @@ import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 
+import static configrations.Constant.CONNECTION_POOL_SIZE;
 import static configrations.Constant.DEVELOPMENT_ENV_FLAG;
 import static configrations.Constant.PASSWORD;
 import static configrations.Constant.PRODUCTION_ENV_FLAG;
@@ -24,6 +25,8 @@ public class SysConf {
         databaseInfo.put(URL, "jdbc:mysql://127.0.0.1:3306/yymg?useUnicode=true&characterEncoding=UTF-8");
         databaseInfo.put(USERNAME, "root");
         databaseInfo.put(PASSWORD, (build.equals(PRODUCTION_ENV_FLAG) ? "" : "123456"));
+
+        databaseInfo.put(CONNECTION_POOL_SIZE, "20");
         return databaseInfo;
     }
 }

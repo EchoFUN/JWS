@@ -29,7 +29,7 @@ public class Request {
         for (int j = 0; j < i; j++) {
             request.append((char) buffer[j]);
         }
-        System.out.print(request.toString());
+        // System.out.print(request.toString());
         uri = parseUri(request.toString());
     }
 

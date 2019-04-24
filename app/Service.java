@@ -11,6 +11,7 @@ import java.util.concurrent.TimeUnit;
 
 import configrations.RequestConf;
 import configrations.SysConf;
+import database.DBUtils;
 import request.RequestThread;
 import utils.ArrayUtils;
 import utils.Logger;
@@ -37,6 +38,7 @@ class Service {
     }
 
     public static void intiService() {
+        DBUtils.inst().init();
         RequestConf.inst().init();
     }
 

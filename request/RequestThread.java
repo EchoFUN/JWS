@@ -21,14 +21,15 @@ public class RequestThread implements Runnable {
     @Override
     public void run() {
         try {
+            System.out.println("thread: " + Thread.currentThread().getId() + " is working for the request .");
+
             input = socket.getInputStream();
             output = socket.getOutputStream();
 
             Request request = new Request(input);
             Response response = new Response(output);
             response.setRequest(request);
-            response.sendDataByController()
-            ;
+            response.sendDataByController();
             socket.close();
         } catch (IOException e) {
             e.printStackTrace();
