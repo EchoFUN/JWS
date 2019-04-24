@@ -26,7 +26,7 @@ public class SysConf {
         databaseInfo.put(USERNAME, "root");
         databaseInfo.put(PASSWORD, (build.equals(PRODUCTION_ENV_FLAG) ? "" : "123456"));
 
-        databaseInfo.put(CONNECTION_POOL_SIZE, "20");
+        databaseInfo.put(CONNECTION_POOL_SIZE, "100");
         return databaseInfo;
     }
 }

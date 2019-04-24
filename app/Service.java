@@ -59,7 +59,7 @@ class Service {
          *
          *
          */
-        ExecutorService executor = new ThreadPoolExecutor(5, 10, 100L, TimeUnit.MILLISECONDS, new LinkedBlockingQueue<>(30), new ThreadPoolExecutor.CallerRunsPolicy());
+        ExecutorService executor = new ThreadPoolExecutor(100, 200, 100L, TimeUnit.MILLISECONDS, new LinkedBlockingQueue<>(30), new ThreadPoolExecutor.CallerRunsPolicy());
         while (true) {
             Socket socket;
             try {
