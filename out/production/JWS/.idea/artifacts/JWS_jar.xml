@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="JWS:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/JWS_jar</output-path>
+    <root id="archive" name="JWS.jar">
+      <element id="module-output" name="JWS" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/mysql/lib/c3p0-0.9.1-pre6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/mysql/mysql-connector-java-8.0.15.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
