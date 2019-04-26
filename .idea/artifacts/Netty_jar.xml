@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Netty:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Netty_jar</output-path>
+    <root id="archive" name="JWS.jar">
+      <element id="module-output" name="JWS" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/netty.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
