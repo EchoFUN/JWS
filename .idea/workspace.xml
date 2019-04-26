@@ -2,31 +2,15 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="Netty:jar" />
+      <artifact name="JWS:jar" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e6037b9-cb34-492f-a5c1-81dc8808edf3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Netty_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/nio/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JWS/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JWS/.idea/artifacts/JWS_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JWS/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JWS/.idea/dictionaries/xukai.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JWS/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JWS/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JWS/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JWS/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JWS/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JWS/.vscode/launch.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JWS/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JWS/JWS.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JWS/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JWS/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JWS/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JWS/webroot/helloworld.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/netty/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/netty/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,24 +29,12 @@
     <favorites_list name="JWS" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/netty/HttpServerHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tests/netty/Main.java">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="288">
+              <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -88,6 +60,7 @@
       <find>whi</find>
       <find>handleStaticRequest</find>
       <find>serverSocket</find>
+      <find>test</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
@@ -127,6 +100,7 @@
         <option value="$PROJECT_DIR$/configrations/SysConf.java" />
         <option value="$PROJECT_DIR$/tests/netty/HttpServerHandler.java" />
         <option value="$PROJECT_DIR$/tests/netty/Main.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -137,10 +111,16 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="32" />
+    <option name="x" value="43" />
     <option name="y" value="23" />
-    <option name="width" value="1747" />
+    <option name="width" value="1623" />
     <option name="height" value="1129" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -151,6 +131,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -161,53 +142,13 @@
             <path>
               <item name="JWS" type="b2602c69:ProjectViewProjectNode" />
               <item name="JWS" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JWS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JWS" type="462c0819:PsiDirectoryNode" />
-              <item name="configrations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JWS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JWS" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JWS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JWS" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JWS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JWS" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JWS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JWS" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-              <item name="Netty_jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JWS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JWS" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JWS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JWS" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="netty" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -312,17 +253,19 @@
       <workItem from="1556078758145" duration="5892000" />
       <workItem from="1556089377980" duration="339000" />
       <workItem from="1556108104310" duration="465000" />
-      <workItem from="1556250253913" duration="6608000" />
+      <workItem from="1556250253913" duration="7030000" />
+      <workItem from="1556270852264" duration="1051000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55212000" />
+    <option name="totallyTimeSpent" value="56685000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="32" y="23" width="1747" height="1129" extended-state="0" />
+    <frame x="43" y="23" width="1623" height="1129" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49833888" visible="true" weight="0.25043988" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49833888" visible="true" weight="0.2517394" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -347,7 +290,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.24955437" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.32953826" />
       <window_info anchor="right" id="Palette" order="5" />
       <window_info anchor="right" id="Coverage" order="6" side_tool="true" weight="0.32976827" />
       <window_info anchor="right" id="Flutter Inspector" order="7" />
@@ -416,56 +359,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/handlers/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webroot/helloworld.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="10" lean-forward="true" selection-start-column="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/Logger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding>
-            <element signature="e#81#82#0" expanded="true" />
-            <element signature="e#116#117#0" expanded="true" />
-            <element signature="e#165#166#0" expanded="true" />
-            <element signature="e#208#209#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="516">
-          <caret line="45" column="9" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/handlers/NotFoundController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/jdk/Contents/Home/jre/lib/rt.jar!/java/sql/DriverManager.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="62">
@@ -664,16 +557,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Service.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/libs/netty.jar!/io/netty/util/AbstractConstant.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -773,17 +656,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/netty/HttpServerHandler.java">
+    <entry file="jar://$PROJECT_DIR$/../../javalibs/netty-all-4.1.35.Final-sources.jar!/io/netty/channel/ChannelFuture.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        <state relative-caret-position="613">
+          <caret line="185" column="18" selection-start-line="185" selection-start-column="18" selection-end-line="185" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../javalibs/netty-all-4.1.35.Final-sources.jar!/io/netty/channel/EventLoopGroup.java">
+    <entry file="file://$PROJECT_DIR$/app/Service.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+        <state relative-caret-position="216">
+          <caret line="18" column="43" lean-forward="true" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -794,13 +677,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/netty/Main.java">
+    <entry file="file://$PROJECT_DIR$/handlers/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="48">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/libs/netty.jar!/io/netty/channel/EventLoopGroup.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/netty/HttpServerHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../javalibs/netty-all-4.1.35.Final-sources.jar!/io/netty/channel/EventLoopGroup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="33" column="11" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/nio/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/netty/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="23" column="22" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
         </state>
       </provider>
     </entry>
