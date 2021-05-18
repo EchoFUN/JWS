@@ -21,56 +21,56 @@ import static configrations.SysConf.WEB_PORT;
 
 class Service {
 
-    public static void main(String[] args) {
-        initConfiguration(args);
-        intiService();
-        initServiceListener();
+  public static void main(String[] args) {
+    initConfiguration(args);
+    intiService();
+    initServiceListener();
+  }
+
+  private static void initServiceListener() {
+    await();
+  }
+
+  private static void initConfiguration(String[] args) {
+    if (ArrayUtils.contains(args, PRODUCTION_ENV_FLAG)) {
+      SysConf.build = PRODUCTION_ENV_FLAG;
+    }
+  }
+
+  public static void intiService() {
+    DBUtils.inst().init();
+    RequestConf.inst().init();
+  }
+
+  public static void await() {
+    ServerSocket serverSocket = null;
+    try {
+      serverSocket = new ServerSocket(WEB_PORT, 1, InetAddress.getByName("127.0.0.1"));
+    } catch (IOException except) {
+      Logger.error(except);
+      System.exit(1);
     }
 
-    private static void initServiceListener() {
-        await();
+    /**
+     *
+     * Dynamic adjust the thread pool parameters to make the system of the best performance .
+     *
+     *
+     *
+     *
+     */
+    ExecutorService executor = new ThreadPoolExecutor(100, 200, 100L, TimeUnit.MILLISECONDS, new LinkedBlockingQueue<>(30), new ThreadPoolExecutor.CallerRunsPolicy());
+    while (true) {
+      Socket socket;
+      try {
+        socket = serverSocket.accept();
+        executor.submit(new RequestThread(socket));
+      } catch (Exception except) {
+        Logger.error(except);
+        continue;
+      }
     }
-
-    private static void initConfiguration(String[] args) {
-        if (ArrayUtils.contains(args, PRODUCTION_ENV_FLAG)) {
-            SysConf.build = PRODUCTION_ENV_FLAG;
-        }
-    }
-
-    public static void intiService() {
-        DBUtils.inst().init();
-        RequestConf.inst().init();
-    }
-
-    public static void await() {
-        ServerSocket serverSocket = null;
-        try {
-            serverSocket = new ServerSocket(WEB_PORT, 1, InetAddress.getByName("127.0.0.1"));
-        } catch (IOException except) {
-            Logger.error(except);
-            System.exit(1);
-        }
-
-        /**
-         *
-         * Dynamic adjust the thread pool parameters to make the system of the best performance .
-         *
-         *
-         *
-         *
-         */
-        ExecutorService executor = new ThreadPoolExecutor(100, 200, 100L, TimeUnit.MILLISECONDS, new LinkedBlockingQueue<>(30), new ThreadPoolExecutor.CallerRunsPolicy());
-        while (true) {
-            Socket socket;
-            try {
-                socket = serverSocket.accept();
-                executor.submit(new RequestThread(socket));
-            } catch (Exception except) {
-                Logger.error(except);
-                continue;
-            }
-        }
-    }
+  }
 }
 
 

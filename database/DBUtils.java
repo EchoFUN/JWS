@@ -19,58 +19,58 @@ import static configrations.Constant.USERNAME;
 
 public class DBUtils {
 
-    public static ComboPooledDataSource dataSource;
+  public static ComboPooledDataSource dataSource;
 
-    public static DBUtils dbUtils;
+  public static DBUtils dbUtils;
 
-    public static DBUtils inst() {
-        if (dbUtils == null) {
-            dbUtils = new DBUtils();
-        }
-        return dbUtils;
+  public static DBUtils inst() {
+    if (dbUtils == null) {
+      dbUtils = new DBUtils();
     }
+    return dbUtils;
+  }
 
-    public void init() {
-        dataSource = new ComboPooledDataSource();
+  public void init() {
+    dataSource = new ComboPooledDataSource();
 
-        Map<String, String> databaseInfo = SysConf.fetchDatabaseInfo();
-        dataSource.setJdbcUrl(databaseInfo.get(URL));
-        dataSource.setUser(databaseInfo.get(USERNAME));
-        dataSource.setPassword(databaseInfo.get(PASSWORD));
+    Map<String, String> databaseInfo = SysConf.fetchDatabaseInfo();
+    dataSource.setJdbcUrl(databaseInfo.get(URL));
+    dataSource.setUser(databaseInfo.get(USERNAME));
+    dataSource.setPassword(databaseInfo.get(PASSWORD));
 
-        dataSource.setMaxPoolSize(Integer.valueOf(databaseInfo.get(CONNECTION_POOL_SIZE)));
+    dataSource.setMaxPoolSize(Integer.valueOf(databaseInfo.get(CONNECTION_POOL_SIZE)));
+  }
+
+  public static void releaseConnection(Connection connection) {
+    try {
+      if (connection != null && !connection.isClosed()) {
+        connection.close();
+      }
+    } catch (SQLException e) {
+      Logger.error(e);
     }
-
-    public static void releaseConnection(Connection connection) {
-        try {
-            if (connection != null && !connection.isClosed()) {
-                connection.close();
-            }
-        } catch (SQLException e) {
-            Logger.error(e);
-        }
-    }
+  }
 
 
-    public static Connection getConnection() throws Exception {
+  public static Connection getConnection() throws Exception {
 
-        /**
-         * Get the connection from the database connection Pool .
-         *
-         *
-         *
-         *
-         */
-        return dataSource.getConnection();
+    /**
+     * Get the connection from the database connection Pool .
+     *
+     *
+     *
+     *
+     */
+    return dataSource.getConnection();
 
 
-        /**
-         * Simple way of use the database connection .
-         *
-         *
-         *
-         *
-         */
+    /**
+     * Simple way of use the database connection .
+     *
+     *
+     *
+     *
+     */
 
         /*
         if (conn == null) {
@@ -80,7 +80,7 @@ public class DBUtils {
         return conn;
          */
 
-    }
+  }
 }
 
 

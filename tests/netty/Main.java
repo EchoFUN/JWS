@@ -12,39 +12,39 @@ import io.netty.handler.codec.http.HttpServerCodec;
 
 public class Main {
 
-    public static void main(String[] args) {
-        try {
-            start(8082);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+  public static void main(String[] args) {
+    try {
+      start(8082);
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+  }
+
+  private static void start(int port) throws Exception {
+    EventLoopGroup boss = new NioEventLoopGroup();
+    EventLoopGroup worker = new NioEventLoopGroup();
+
+    ServerBootstrap serverBootstrap = new ServerBootstrap();
+    try {
+
+      serverBootstrap.channel(NioServerSocketChannel.class)
+              .group(boss, worker)
+              .childOption(ChannelOption.SO_KEEPALIVE, true)
+              .option(ChannelOption.SO_BACKLOG, 1024)
+              .childHandler(new ChannelInitializer<SocketChannel>() {
+                @Override
+                protected void initChannel(SocketChannel ch) throws Exception {
+                  ch.pipeline().addLast("http-decoder", new HttpServerCodec());
+                  ch.pipeline().addLast(new HttpServerHandler());
+                }
+              });
+
+      ChannelFuture future = serverBootstrap.bind(port).sync();
+      future.channel().closeFuture().sync();
+    } finally {
+      boss.shutdownGracefully();
+      worker.shutdownGracefully();
     }
 
-    private static void start(int port) throws Exception {
-        EventLoopGroup boss = new NioEventLoopGroup();
-        EventLoopGroup worker = new NioEventLoopGroup();
-
-        ServerBootstrap serverBootstrap = new ServerBootstrap();
-        try {
-
-            serverBootstrap.channel(NioServerSocketChannel.class)
-                            .group(boss, worker)
-                            .childOption(ChannelOption.SO_KEEPALIVE, true)
-                            .option(ChannelOption.SO_BACKLOG, 1024)
-                            .childHandler(new ChannelInitializer<SocketChannel>() {
-                                @Override
-                                protected void initChannel(SocketChannel ch) throws Exception {
-                                    ch.pipeline().addLast("http-decoder", new HttpServerCodec());
-                                    ch.pipeline().addLast(new HttpServerHandler());
-                                }
-                            });
-
-            ChannelFuture future = serverBootstrap.bind(port).sync();
-            future.channel().closeFuture().sync();
-        } finally {
-            boss.shutdownGracefully();
-            worker.shutdownGracefully();
-        }
-
-    }
+  }
 }

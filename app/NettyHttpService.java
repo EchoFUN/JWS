@@ -1,7 +1,6 @@
 package app;
 
-public class NioService {
-
+public class NettyHttpService {
   public static void main(String[] args) {
 
 
