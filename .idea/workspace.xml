@@ -7,26 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e6037b9-cb34-492f-a5c1-81dc8808edf3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/NettyHttpService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/NioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/NioService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/Service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configrations/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/configrations/Constant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configrations/RequestConf.java" beforeDir="false" afterPath="$PROJECT_DIR$/configrations/RequestConf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configrations/SysConf.java" beforeDir="false" afterPath="$PROJECT_DIR$/configrations/SysConf.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/DBUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/DBUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handlers/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handlers/HelloworldController.java" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/HelloworldController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handlers/NotFoundController.java" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/NotFoundController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JWS/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JWS/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JWS/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JWS/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JWS/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JWS/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/request/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/request/Request.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/request/RequestThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/request/RequestThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/request/RequestUrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/request/RequestUrl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/response/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/response/Response.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/netty/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/netty/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +49,7 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
     <property name="GenerateAntBuildDialog.backupFiles" value="true" />
     <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
     <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
@@ -220,7 +206,7 @@
       <workItem from="1567260645179" duration="14000" />
       <workItem from="1621235637110" duration="445000" />
       <workItem from="1621310552141" duration="1411000" />
-      <workItem from="1621328679694" duration="697000" />
+      <workItem from="1621328679694" duration="5914000" />
     </task>
     <servers />
   </component>
@@ -256,6 +242,16 @@
           <url>file://$PROJECT_DIR$/tests/nio/Server.java</url>
           <line>52</line>
           <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/handlers/NotFoundController.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/request/Request.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

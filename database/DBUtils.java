@@ -3,13 +3,11 @@ package database;
 
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 
-import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.Map;
 
 import configrations.SysConf;
-import sun.rmi.runtime.Log;
 import utils.Logger;
 
 import static configrations.Constant.CONNECTION_POOL_SIZE;
